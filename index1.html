@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./app.css" />
+        <script src="js1234.js"></script>
+        <title>JS Validation</title>
+    </head>
+    <body>
+        <h2> DOM Manipulation</h2>
+        <button onclick="Click()">Click Me</button>
+        <h3 id="heading3">This is Heading Three</h3>
+    <hr>
+    <h2>Textbox Input</h2>
+    <input type="text" id="text1" placeholder="This is some text" required>
+    <br>
+    <input type="password" id="text2" placeholder="password"required>
+    <button id="btntext" onclick="ShowText()">Click Me</button>
+    <hr>
+    <h2>3- Drop down Select box</h2>
+    <select name="choice" id="s1">
+        <option value="v1">Christmas</option>
+        <option value="v2">Thanksgiving</option>
+        <option value="v3">4th of July</option>
+        <option value="v4">Halloween</option>
+    </select> 
+    <button onclick="Select()">Click</button>
+    <p id="demos"></p>
+    <hr>
+        <h2>4- JavaScript Validation</h2>
+        <p>Please Input a number between 1 and 10:</p>
+        <input id="number">
+        <button type="button" onclick="myFunction()">Submit</button>
+        <p id="demo"></p>
+        <hr>
+        <h2>5- Forms Validation</h2>
+        <form name="myForm" onsubmit="validateForm()" method="get">Name:<input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+    <p id="demo1"></p>
+
+    <hr>
+    <h2>6- HTML code for radio box</h2>
+    <p>Select your favorite colors:</p>
+    <label for="c1"> <input type="radio" name="color" value="red" id="c1"checked>Red</label>
+        <label for="c2"><input type="radio" name="color" value="blue" id="c2">Blue</label>
+        <label for="c3"><input type="radio" name="color" value="green" id="c3">Green</label>
+        <input type="button" onclick="check()" value="Check">
+    <hr>
+    <h2>7- HTML code for check box</h2>
+    <label for="r1"><input type="checkbox" name="color" value="red" id="r1" checked>Red</label>
+    <label for="r1"><input type="checkbox" name="color" value="white" id="r2" checked>White</label>
+    <input id="button" type="button" onclick="Toggle()">
+    </body>
+    </html>
+    

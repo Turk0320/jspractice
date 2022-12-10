@@ -1,2 +1,76 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+function check(){
+    let c1=document.getElementById("c1");
+    let c2=document.getElementById("c2");
+    let c3=document.getElementById("c3");
+    if(c1.checked == true){
+        alert("color checked" + c1.value);
+    }
+    else if (c2.checked == true) {
+        alert("color selected" + c3.value);
+    }
+    else if(c3.checked == true){
+        alert("color selected" + c3.value);
+    }
+}
+function Toggle(){
+    let r1=document.getElementById("r1");
+    let r2=document.getElementById("r2");
+    if(r1.checked == true){
+        alert("r1 checked - unchecking" + r1.value);
+        r1.checked = false;
+        r2.checked = true;
+    }
+    else{
+        r1.checked=true;
+        r2.checked=false;
+    }
+}
+
+function Click(){
+alert("Button clicked");
+let str=document.getElementById("heading3").innerHTML
+alert(str);
+document.getElementById("heading3").innerHTML = "CIS DOM Manipulation"
+}
+function ShowText(){
+    let str1=document.getElementById("text1").value;
+    let str2 = document.getElementById("text2").value;
+    alert("value in textbox" + str1);
+    if(str1 !== "" & (str1 == str2)){
+        alert('Username and Password match.');
+    }
+    else {
+        alert('username and password do not match');
+    }
+}
+function Select(){
+    let select=document.getElementById("s1");
+    let str=select.options[select.selectedIndex].innerHTML;
+    document.getElementById("demos").innerHTML = str;
+    alert("selected" + str);
+}
+function myFunction(){
+    let x= document.getElementById("number").value;
+    let text;
+    if (isNaN(x) || x < 1 || x > 10) {
+        text="Input not valid";
+    } else{
+        text="Input OK";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+function validationForm(){
+    let x=document.forms["myForm"]["fname"].value;
+    let text
+    if (x =="") {
+        alert("Name must be filled out");
+        text = "Name must be provided";
+        return false;
+    }
+    else {
+        alert("text entered: " + x)
+    };
+    document.getElementById("demo").innerHTML = text;
+}
