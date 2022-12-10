@@ -63,7 +63,7 @@ function myFunction(){
 }
 function validationForm(){
     let x=document.forms["myForm"]["fname"].value;
-    let text
+    let text=""
     if (x =="") {
         alert("Name must be filled out");
         text = "Name must be provided";
